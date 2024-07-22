@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slide{
+            width: 500px;
+            margin: 1px auto;
+        }
+        img{
+            max-width: 300px;
+            height: 500px;
+            object-fit: fill;
+        }
+
+        .big{
+            text-align: center;
+        }
+        .big h1{
+            color: #000;
+        }
+        .container{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <h1>비포선라이즈</h1>
+        <div class="slide">
+            <img src="https://images.chosun.com/resizer/EG9rD_MmSRQPNyuIDITncwb6ZYQ=/540x305/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/XAWX6MEXMXIUYQOAK5Y2UCC5DI.jpg" alt="1">
+            <img src="https://static.hubzum.zumst.com/hubzum/2017/08/29/11/75eaea402bbb4819a13e6e2614bf2f3a.jpg" alt="1">
+            <img src="https://cdn.psychiatricnews.net/news/photo/202210/33618_29257_2921.png" alt="1">
+        </div>
+        <span>개요 멜로/로맨스오스트리아, 미국100분<br>재개봉 2024.07.17.<br>개봉 1996.03.30.<br>수상 수상내역보기<br>
+        오스트리아 빈으로 향하던 기차 안에서 우연히 만난 제시와 셀린. 알 수 없는 감정에 끌린<br> 두 사람은 아무런 일정도 없이 기차에서 하차한다. 그리고 단 하루, 꿈 같은 시간...</span>
+    </div>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.slide').slick({
+        // 자동재생
+        autoplay:true,
+        nfinite: false,
+        // 보여줄 사진의 개수
+        slidesToShow:1,
+        //     // 스크롤 할 때 넘기는 사진의 개수
+        slidesToScroll:1,
+        //     // 화살표 추가
+        arraws:true,
+        //     // 현재 위치 점 추가
+         });
+    </script>
+    <div class="container">
+        <div>
+       <a href="//naver.com"><img src="https://t3.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/3xkX/image/A1DGm9x6xNC5CGxwbwbpfFYnlJk.png" alt="" class="img1"></a><br>
+        <img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/61c19489-1465-4aa3-939b-87c18cd67d86.jpeg" alt="" class="img2"><br>
+        <img src="https://ofdebonair.com/wp-content/uploads/2024/03/d996689cf865f28f0912d1dba6305450-696x1024-optimized.jpg" alt="" class="img3"><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa2I4-8l3pLwd3SyS4LLa0CII57tJ7aU5Mcg&s" alt="" class="img4"><br>
+        <img src="https://sleepless030.wordpress.com/wp-content/uploads/2015/08/before-sunrise_vienna.jpg?w=640" alt="" class="img5"><br>
+        <img src="https://db.kookje.co.kr/news2000/photo/2018/0730/L20180730.99099014378i1.jpg" alt="" class="img6">
+        </div>
+        <div>
+            
+        </div>
+    </div>
+    <script>
+        // let array = [1,2,3]
+        
+        // array.forEach((x)=>{})
+        // function func(a){
+
+        // }
+        // func("hello")
+        ScrollReveal().reveal('.img1',{
+            delay:400,
+            distance:'50px',
+            origin:'left',
+            opacity: 0.1,
+            reset:true,
+        });
+        ScrollReveal().reveal('.img2',{
+            delay:600,
+            distance:'50px',
+            origin:'right',
+            opacity: 0.1,
+            reset:true
+        });
+        ScrollReveal().reveal('.img3',{
+            delay:800,
+            distance:'50px',
+            origin:'left',
+            opacity: 0.1,
+            reset:true
+        });
+        ScrollReveal().reveal('.img4',{
+            delay:1000,
+            distance:'50px',
+            origin:'right',
+            opacity: 0.1,
+            reset:true
+        });
+        ScrollReveal().reveal('.img5',{
+            delay:1200,
+            distance:'50px',
+            origin:'left',
+            opacity: 0.1,
+            reset:true
+        });
+        ScrollReveal().reveal('.img6',{
+            delay:1400,
+            distance:'50px',
+            origin:'right',
+            opacity: 0.1,
+            reset:true
+        });
+    </script>
+</body>
+</html>
